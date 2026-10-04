@@ -1,0 +1,24 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Outputs gerados
+outputs/*
+!outputs/.gitkeep
+
+# Dados (descomente se nao quiser versionar os CSVs)
+# data/*.csv
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
