@@ -106,12 +106,12 @@ plt.close(fig)
 fig, axes = plt.subplots(2, 4, figsize=(18, 8))
 for j, col in enumerate(FEATURES):
     ax = axes[0, j]
-    ax.boxplot(df_raw[col].dropna(), vert=True, patch_artist=True,
+    ax.boxplot(df_raw[col].dropna(), orientation="vertical", patch_artist=True,
                boxprops=dict(facecolor="#f2b3b0"))
     ax.set_title(f"{col}\n(bruto)", fontsize=10)
     ax.tick_params(labelsize=8)
     ax = axes[1, j]
-    ax.boxplot(df[col].dropna(), vert=True, patch_artist=True,
+    ax.boxplot(df[col].dropna(), orientation="vertical", patch_artist=True,
                boxprops=dict(facecolor="#b8cbe6"))
     ax.set_title(f"{col}\n(limpo)", fontsize=10)
     ax.tick_params(labelsize=8)
