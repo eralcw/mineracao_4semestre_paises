@@ -10,9 +10,11 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 
-# Outputs gerados
-outputs/*
+# Outputs gerados (em qualquer nivel)
+outputs/
 !outputs/.gitkeep
+**/outputs/*.csv
+out.log
 
 # Dados (descomente se nao quiser versionar os CSVs)
 # data/*.csv
