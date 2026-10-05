@@ -1,11 +1,10 @@
 """Figuras do relatorio -- uma resposta direta por pergunta (FIGURAS_DO_RELATORIO.md).
 
-Reaproveita a logica/dados das aulas e gera as figuras Q1..Q9 em outputs/figuras/,
+Reproduz a logica/dados do notebook e gera as figuras Q1..Q9 em outputs/figuras/,
 com titulos AFIRMATIVOS e regras de clareza (mesma escala antes x depois, fontes
 maiores, grid leve, unidades, anotacao de valores-chave).
 
 NAO muda numeros, limpeza, indicadores, k=3, escalonamento nem distancia.
-Mantem as cores atuais das figuras das aulas.
 
 Rodar: python src/figuras_relatorio.py
 """
@@ -42,7 +41,7 @@ from _comum import (
 )
 
 # ---------------------------------------------------------------------------
-# Paleta ATUAL das figuras das aulas (NAO alterar)
+# Paleta do projeto (NAO alterar)
 # ---------------------------------------------------------------------------
 AZUL, VERM, VERDE, LARANJA, ROXO = "#4f81bd", "#c0504d", "#9bbb59", "#f79646", "#8064a2"
 
@@ -61,7 +60,7 @@ def grade(ax):
 
 
 # ---------------------------------------------------------------------------
-# Dados e pipeline (identicos ao notebook / aulas)
+# Dados e pipeline (identicos ao notebook)
 # ---------------------------------------------------------------------------
 print("=" * 70)
 print("FIGURAS DO RELATORIO (Q1..Q9)")
